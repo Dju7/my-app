@@ -6,6 +6,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+        primary: '#374785',
+        secondary: '#ECECEC',
+        tertiary: '#FFFF00',
+        fourth: '#F76C6C',
+        fifth: '#A8D0E6',
+        sixth: '#5da2d5',
+      },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -14,5 +22,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@xpd/tailwind-3dtransforms")
+  ],
 };

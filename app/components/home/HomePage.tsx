@@ -58,7 +58,7 @@ export default function HomePage() {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl text-sixth">Déploiement</h1>
               </div>
               <div className="absolute h-full w-full bg-secondary transform rotate-x-180 backface-hidden">
-               <h1 className="text-6xl">by-by World</h1>
+               <h1 className="text-6xl">byWorld</h1>
               </div>
             </div>
           </div>

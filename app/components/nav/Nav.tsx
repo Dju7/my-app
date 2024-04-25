@@ -40,7 +40,7 @@ export default function Nav() {
       };
   
   return (
-    <nav className='ml-6 h-full w-[20%] flex justify-start items-center lg:flex-row gap-6 text-2xl text-fourth'>
+    <nav className='ml-6 h-full w-[20%] flex justify-start items-center lg:flex-row lg:gap-6 text-lg md:text-2xl text-fourth'>
       <div className='flex h-full gap-6 items-center justify-center'>
         <Link href="#section1" className={activeSection === "section1" ? "active" : ""} 
           onMouseEnter={() => handleMouseEnter('Accueil')}  onMouseLeave={handleMouseLeave}>

@@ -39,10 +39,10 @@ export default function OpenCard() {
 
   return (
     <motion.div className="flex items-center justify-center min-h-full my-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-4">
         {items.map((item) => (
           <motion.div
-            className="group h-[400px] xl:h-[450px] w-[280px] 2xl:w-[350px] bg-secondary rounded-lg shadow-md cursor-pointer transform transition-transform duration-500 hover:scale-105 hover:bg-primary "
+            className="group h-[400px] xl:h-[450px] w-[300px] 2xl:w-[350px] bg-secondary rounded-lg shadow-md cursor-pointer transform transition-transform duration-500 hover:scale-105 hover:bg-primary "
             layoutId={`${item.id}`}
             onClick={() => setSelectedId(item.id)}
             key={item.id}
@@ -52,7 +52,7 @@ export default function OpenCard() {
           >
             <div className='p-2'>
               <motion.h2 className="text-xl font-bold mb-2 text-primary group-hover:text-secondary">{item.title}</motion.h2>
-              <motion.h5 className="text-sm font-bold mb-1 text-primary group-hover:text-secondary">{item.subtitle}</motion.h5>
+              <motion.h5 className="text-sm font-bold mb-1 text-fourth">{item.subtitle}</motion.h5>
             </div>
           </motion.div>
         ))}

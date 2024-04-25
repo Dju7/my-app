@@ -13,6 +13,7 @@ module.exports = {
         fourth: '#F76C6C',
         fifth: '#A8D0E6',
         sixth: '#5da2d5',
+        blanc: '#FFFF'
       },
     extend: {
       backgroundImage: {

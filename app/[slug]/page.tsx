@@ -25,10 +25,10 @@ interface PageProps {
     const item = itemsData.find(item => item.number === slugNumber);
   
     return (
-      <section className="flex gap-6 justify-center items-center">
+      <section className="flex gap-6 justify-center items-center bg-secondary">
         <div className=" relative h-[80vh] w-[80%]">
             <motion.div 
-             className="absolute z-20 left-[5%] lg:left-[3%] top:0 lg:top-36 h-[35%] lg:h-[45%] w-[75%] lg:w-[35%] 2xl:w-[25%] bg-secondary p-4"
+             className="absolute z-20 left-[5%] lg:left-[3%] top:0 lg:top-36 h-[35%] lg:h-[55%] w-[75%] lg:w-[35%] 2xl:w-[25%] bg-fourth p-4 flex flex-col"
             initial={{x:500, y:200}}
             animate={{x:0, y:0}}
             transition={{duration:0.4}}
@@ -39,7 +39,8 @@ interface PageProps {
                 ) : (
                 <p>Texte non trouvé pour le numéro {slugNumber}</p>
                 )}
-                <Link href="/#section4">Retour</Link>
+                <Link href="/#section4" className="text-secondary w-[20%] border border-secondary p-2">Retour</Link>
+                
             </motion.div>
             <motion.div 
             className="absolute z-10 left-0 lg:left-[20%] bottom-0 lg:top-12 bg-fifth h-[90%] w-full lg:w-[80%] shadow-xl shadow-primary"

@@ -4,9 +4,9 @@ import Image from 'next/image'
 export default function Techno() {
   return (
     <section className=' bg-secondary flex flex-col justify-center items-center'>
-      <article className='min-h-[60vh] w-full flex flex-col-reverse lg:flex-row justify-start items-center text-primary '>
-        <div className='h-[60vh] w-[90%] lg:w-[50%] overflow-hidden bg-fifth flex justify-center items-center mt-6 lg:mt-0'>
-          <Image src='/react.png' alt='react' height={400} width={400} />
+      <article className='min-h-[60vh] w-full flex flex-col lg:flex-row justify-start items-center text-primary '>
+        <div className='relative h-[50vh] w-full lg:w-[50%] bg-fifth bg-opacity-40 mask overflow-hidden flex justify-center items-center mt-6 lg:mt-0 '>
+        <Image src="/home.png" alt='logo' height={300} width={700} className='absolute z-10 right-4 lg:right-20' />
         </div>
 
         <div className='h-full w-[90%] sm:w-[60%] lg:w-[30%] overflow-hidden flex flex-col justify-center pl-4 mt-6 lg:mt-0'>

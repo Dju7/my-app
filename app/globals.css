@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +14,14 @@ section {
 }
 
 .active {
-  color: rgb(233, 245, 67)
+  color: #5da2d5
 }
+
+
+.mask {
+  mask-image: linear-gradient(to right, white 80%, transparent)
+}
+
 
 @layer base {
 
@@ -24,6 +30,6 @@ section {
     font-family: "Righteous", sans-serif;
   }
    h4 {
-    font-family: "Monofett", monospace;
+    font-family: "Luckiest Guy", cursive;
    }
 }
